@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin">16dp</dimen>
+    <dimen name="offset_margin">32dp</dimen>
+
+    <dimen name="photo_list_gap">2dp</dimen>
+
+    <dimen name="photo_thumbnail_width">500px</dimen>
+    <dimen name="photo_thumbnail_height">375px</dimen>
+
+    <dimen name="search_display_text">20sp</dimen>
+    <dimen name="standard_text">16sp</dimen>
+
+</resources>

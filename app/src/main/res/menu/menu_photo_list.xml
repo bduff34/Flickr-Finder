@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:compat="http://schemas.android.com/apk/res-auto"
+    tools:context="timewizard.com.flickrfinder.activity.MainActivity">
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="@string/menu_search"
+        android:icon="@drawable/ic_search_white"
+        compat:showAsAction="collapseActionView|ifRoom"
+        compat:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/menu_sort"
+        android:title="@string/menu_sort"
+        android:icon="@drawable/ic_sort_white"
+        compat:showAsAction="collapseActionView|ifRoom"  >
+        <menu>
+            <item
+                android:id="@+id/sort_relevant"
+                android:title="@string/menu_sort_relevant" />
+            <item
+                android:id="@+id/sort_interesting"
+                android:title="@string/menu_sort_interesting" />
+            <item
+                android:id="@+id/sort_recent"
+                android:title="@string/menu_sort_recent" />
+        </menu>
+    </item>
+
+</menu>

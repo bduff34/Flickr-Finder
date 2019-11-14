@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/photo_list_gap"
+    android:paddingBottom="@dimen/photo_list_gap" >
+
+    <ImageView
+        android:id="@+id/photo_image"
+        android:layout_width="@dimen/photo_thumbnail_width"
+        android:layout_height="@dimen/photo_thumbnail_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/photo_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="@dimen/standard_text"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:scrollHorizontally="false"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:paddingTop="@dimen/margin"
+        app:layout_constraintStart_toEndOf="@id/photo_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/photo_image" />
+
+    <TextView
+        android:id="@+id/photo_owner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Owner"
+        android:textStyle="italic"
+        android:maxLines="2"
+        android:scrollHorizontally="false"
+        android:textSize="@dimen/standard_text"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:paddingBottom="@dimen/margin"
+        app:layout_constraintTop_toBottomOf="@id/photo_title"
+        app:layout_constraintStart_toEndOf="@id/photo_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/photo_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

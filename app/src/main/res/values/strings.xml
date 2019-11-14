@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Flickr Finder</string>
+
+    <string name="menu_search">Search Photos</string>
+    <string name="menu_sort">Sort Photos</string>
+
+    <string name="menu_sort_relevant">Sort by Relevant</string>
+    <string name="menu_sort_interesting">Sort by Top</string>
+    <string name="menu_sort_recent">Sort by Recent</string>
+
+    <string name="sort_relevant">Relevant</string>
+    <string name="sort_interesting">Top</string>
+    <string name="sort_recent">Recent</string>
+
+    <!-- Top "cats" Photos -->
+    <string name="search_default_text">%s photos</string>
+    <string name="search_query_text">%s \"%s\" photos</string>
+    <string name="search_results_count">%,d-%,d of %,d results</string>
+
+</resources>
